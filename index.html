@@ -27,6 +27,13 @@
             gap: 1rem;
         }
 
+        header a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
         header img {
             height: 48px;
             width: auto;
@@ -52,6 +59,16 @@
             color: #c9a227;
             margin-bottom: 0.5rem;
             letter-spacing: 0.02em;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #21262d;
         }
 
         .subtitle {
@@ -87,18 +104,54 @@
         .faction {
             color: #8b9dc3;
         }
+
+        .players {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .player-link {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: #c9a227;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .player-link:hover {
+            background-color: #21262d;
+            border-color: #c9a227;
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="Wednesday_Night.png" alt="Wednesday Night">
-        <span>Wednesday Night</span>
+        <a href="index.html">
+            <img src="Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
     </header>
 
     <main>
         <h1>Stonewalkers Campaign</h1>
         <p class="subtitle">A journey through the Unclaimed Hills</p>
 
+        <h2>Meet the Players</h2>
+        <div class="players">
+            <a href="abena.html" class="player-link">Abena</a>
+            <a href="jomari.html" class="player-link">Jomari</a>
+            <a href="vedd.html" class="player-link">Vedd</a>
+            <a href="jett.html" class="player-link">Jett Blackcoffee</a>
+        </div>
+
+        <h2>The Story So Far</h2>
         <div class="recap">
             <p>So, let's recap where our journey began. You found yourselves trekking through the desolate scrub of the <span class="location">Unclaimed Hills</span>, racing against a darkening sky alongside <span class="name">Taszo-son-Clutio</span>, that anxious Shin monk with the broken arm whom you had agreed to escort to the <span class="location">Shattered Plains</span>.</p>
 

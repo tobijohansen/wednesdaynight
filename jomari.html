@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jomari - Stonewalkers Campaign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #21262d;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        header img {
+            height: 48px;
+            width: auto;
+            opacity: 0.85;
+        }
+
+        header span {
+            color: #6e7681;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #6e7681;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #c9a227;
+        }
+
+        .back-link::before {
+            content: "← ";
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0.02em;
+        }
+
+        .class-name {
+            color: #6e7681;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .character-portrait {
+            float: right;
+            max-width: 280px;
+            margin: 0 0 1.5rem 2rem;
+            border-radius: 8px;
+            border: 1px solid #21262d;
+        }
+
+        .bio {
+            text-align: justify;
+        }
+
+        .bio p {
+            margin-bottom: 1.5rem;
+        }
+
+        .name {
+            color: #d4a857;
+        }
+
+        @media (max-width: 600px) {
+            .character-portrait {
+                float: none;
+                display: block;
+                max-width: 100%;
+                margin: 0 auto 2rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Jomari</h1>
+        <p class="class-name">Agent</p>
+        
+        <img src="Jomari.png" alt="Jomari" class="character-portrait">
+        
+        <div class="bio">
+            <p>I know I'm destined for greatness, even if my current situation doesn't look like it. I'm impulsive and proud, which is probably how a mischief-maker like me ended up in a bridge crew.</p>
+            
+            <p>I'm a thief by trade—nimble, fast-talking, and good at getting out of trouble. My main goal right now is to earn my freedom or find a way to escape this crew, but I do feel a certain loyalty to the others in Bridge Nine, specifically the kid <span class="name">Aran</span> and the old man <span class="name">Doral</span>.</p>
+        </div>
+    </main>
+</body>
+</html>

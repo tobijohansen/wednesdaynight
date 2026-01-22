@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abena - Stonewalkers Campaign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #21262d;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        header img {
+            height: 48px;
+            width: auto;
+            opacity: 0.85;
+        }
+
+        header span {
+            color: #6e7681;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #6e7681;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #c9a227;
+        }
+
+        .back-link::before {
+            content: "← ";
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0.02em;
+        }
+
+        .class-name {
+            color: #6e7681;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .character-portrait {
+            float: right;
+            max-width: 280px;
+            margin: 0 0 1.5rem 2rem;
+            border-radius: 8px;
+            border: 1px solid #21262d;
+        }
+
+        .bio {
+            text-align: justify;
+        }
+
+        .bio p {
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .character-portrait {
+                float: none;
+                display: block;
+                max-width: 100%;
+                margin: 0 auto 2rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Abena</h1>
+        <p class="class-name">Hunter</p>
+        
+        <img src="Abena.png" alt="Abena" class="character-portrait">
+        
+        <div class="bio">
+            <p>I was once a bailiff back home, upholding the intricate legal codes of my country, but I left that life to find a new beginning here on the Shattered Plains. I value my independence, but I am compassionate toward others.</p>
+            
+            <p>My goal now is to earn respect as a highly skilled scout. I'm good at tracking foes and taking them down from a distance—and I might even have the potential to become a Windrunner or Willshaper one day.</p>
+        </div>
+    </main>
+</body>
+</html>
