@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonewalkers Campaign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #21262d;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        header img {
+            height: 48px;
+            width: auto;
+            opacity: 0.85;
+        }
+
+        header span {
+            color: #6e7681;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #21262d;
+        }
+
+        .subtitle {
+            color: #6e7681;
+            font-style: italic;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #21262d;
+        }
+
+        .recap p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .recap p:first-of-type::first-letter {
+            font-size: 3.5rem;
+            float: left;
+            line-height: 1;
+            padding-right: 0.5rem;
+            color: #c9a227;
+            font-weight: bold;
+        }
+
+        .name {
+            color: #d4a857;
+        }
+
+        .location {
+            color: #7ab8bf;
+        }
+
+        .faction {
+            color: #8b9dc3;
+        }
+
+        .players {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .player-link {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: #c9a227;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .player-link:hover {
+            background-color: #21262d;
+            border-color: #c9a227;
+            transform: translateY(-2px);
+        }
+
+        .has-portrait {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .portrait-popup {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 300px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            margin-bottom: 8px;
+            z-index: 10;
+        }
+        
+        .has-portrait:hover .portrait-popup {
+            display: block;
+        }
+        .portrait-small {
+            max-width: 150px;
+        }
+        
+        .portrait-large {
+            max-width: 400px;
+        }
+        
+        .portrait-wide {
+            max-width: 500px;
+        }
+
+        .audio-player {
+            margin-bottom: 2rem;
+        }
+
+        .audio-title {
+            color: #c9a227;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .audio-player audio {
+            width: 100%;
+            max-width: 400px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+
+    <main>
+        <h1>Stonewalkers Campaign</h1>
+        <p class="subtitle">A journey through the Unclaimed Hills</p>
+
+        <div class="audio-player">
+            <p class="audio-title">Seducing Spren in the Stormlight RPG</p>
+            <audio controls>
+                <source src="audio/Seducing_Spren_In_The_Stormlight_RPG.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <h2>Meet the Players</h2>
+        <div class="players">
+            <a href="abena.html" class="player-link">Abena</a>
+            <a href="jomari.html" class="player-link">Jomari</a>
+            <a href="vedd.html" class="player-link">Vedd</a>
+            <a href="jett.html" class="player-link">Jett Blackcloaks</a>
+        </div>
+
+        <h2>The Story So Far</h2>
+        <p class="session-date">1/21/26</p>
+        <div class="recap">
+            <p>So, let's recap where our journey began. You found yourselves trekking through the desolate scrub of the <span class="location">Unclaimed Hills</span>, racing against a darkening sky alongside <a href="images/Taszo.png" target="_blank" class="name has-portrait">Taszo-son-Clutio<img src="images/Taszo.png" class="portrait-popup" alt="Taszo-son-Clutio"></a>, that anxious Shin monk with the broken arm whom you had agreed to escort to the <span class="location">Shattered Plains</span>.</p>
+
+            <p>Seeking shelter from the approaching highstorm, you crested a hill and looked down upon the <a href="images/covenantstonecrossroads.png" target="_blank" class="name has-portrait">Covenant Stone Crossroads<img src="images/covenantstonecrossroads.png" class="portrait-popup portrait-wide" alt="Covenant Stone Crossroads"></a>—a massive, natural cliff wall that offered the only real protection for miles. <a href="images/map1.2.png" target="_blank" class="name has-portrait">You weren't alone there<img src="images/map1.2.png" class="portrait-popup portrait-wide" alt="You weren't alone there"></a>; a modest merchant caravan and a heavy military detachment flying the blue banners of <span class="faction">House Kholin</span> had also gathered to wait out the tempest.</p>
+
+            <p>While you helped the camp batten down the hatches, your attention was drawn to a reinforced, windowless coach in the Kholin camp. You watched a belligerent sergeant named <span class="name">Ellar</span> mock the prisoner inside—a man named <a href="images/talninstormwagon.png" target="_blank" class="name has-portrait">Taln<img src="images/talninstormwagon.png" class="portrait-popup" alt="Taln"></a> who sat in the dark, muttering a mantra about a coming Desolation. While the footman <a href="images/Bordin.png" target="_blank" class="name has-portrait">Bordin<img src="images/Bordin.png" class="portrait-popup" alt="Bordin"></a> intervened to keep the peace, <span class="name">Taszo</span> pulled you aside to reveal the true stakes of his mission: he believed the prisoner was a Herald of the Almighty, and that the wagon secretly contained a sacred Honorblade.</p>
+
+            <p>But you barely had time to process this before chaos struck. You went to help a merchant named <span class="name">Tet Rebin</span>, whose wagon seemed stuck in mud, only to realize the 'mud' was actually crem placed as a trap. Bandits ambushed the camp, drawing the Kholin soldiers out of position.</p>
+
+            <p>It was a diversion. While you fought, a thief named <span class="name">Kaiana</span>—marked with a green glyph on her face—infiltrated the high-security wagon and swapped the real Honorblade for a decoy. <span class="name">Taszo</span> saw the thieves retreating and, in a panic, sprinted away from safety, chasing them directly toward the approaching stormwall.</p>
+
+            <p>You ran into the fury of the storm to save him. The wind was deafening, the rain like knives, but a strange, rolling stone guided you forward—<span class="name">Po'ahu</span>, a peakspren trying to get your help.</p>
+
+            <p>In the lightning flashes, <a href="images/yltholdinghonorblade.png" target="_blank" class="name has-portrait">you saw them<img src="images/yltholdinghonorblade.png" class="portrait-popup" alt="you saw them"></a>: the golden-skinned Radiant <span class="name">Ylt</span> holding the stolen blade, the thief <span class="name">Kaiana</span>, and their enforcer, <span class="name">Veth</span>. <span class="name">Ylt</span> and the reluctant <span class="name">Kaiana</span> escape into the chaos of the highstorm as <span class="name">Veth</span> turns to the characters with death in his eyes.<!-- You arrived just seconds too late. You witnessed <span class="name">Veth</span> stab <span class="name">Taszo</span> in the gut. <span class="name">Ylt</span> and <span class="name">Kaiana</span> escaped into the storm, leaving you with the dying monk. --></p>
+
+            <!--<p>As the storm raged, <span class="name">Taszo</span> pressed the warm stone into your hands. With his final breath, he begged you to finish his mission(Garry did). He told you to take <span class="name">Po'ahu</span> and find a contact named <span class="name">Liss</span> at the warcamps. You swore to retrieve the blade, and as <span class="name">Taszo</span> passed, you were left with a heavy burden: you are the only ones who know the truth, and the only thing standing between Roshar and a new Desolation.</p>-->
+        </div>
+    </main>
+</body>
+</html>
