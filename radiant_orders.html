@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiant Orders & Classes - Stonewalkers Campaign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #21262d;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        header img {
+            height: 48px;
+            width: auto;
+            opacity: 0.85;
+        }
+
+        header span {
+            color: #6e7681;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #6e7681;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #c9a227;
+        }
+
+        .back-link::before {
+            content: "← ";
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-bottom: 2rem;
+            letter-spacing: 0.02em;
+        }
+
+        .order {
+            margin-bottom: 1.5rem;
+        }
+
+        .order-name {
+            color: #d4a857;
+            font-weight: bold;
+        }
+
+        .order-class {
+            color: #7ab8bf;
+        }
+
+        .tooltip {
+            position: relative;
+            cursor: pointer;
+            border-bottom: 1px dotted #d4a857;
+        }
+
+        .tooltip-text {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 8px;
+            z-index: 10;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .tooltip:hover .tooltip-text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Radiant Orders & Classes</h1>
+
+        <div class="order">
+            <span class="order-name">Bondsmiths (Unity)</span> → <span class="order-class">Leader</span><br>
+            Not available to PCs at level 1, but if we're theorizing, Bondsmiths are natural Leaders—the ones who unify factions and direct destiny.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Dustbringers (Self-Mastery)</span> → <span class="order-class">Warrior or Agent</span><br>
+            They wrestle with destructive power and self-control. Warriors capture the raw might, Agents bring the precision and restraint side.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Edgedancers (Remembrance)</span> → <span class="order-class">Envoy or Scholar</span><br>
+            They serve those forgotten by society. An Envoy's empathy and a Scholar's healing or medicine skills both fit beautifully.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Elsecallers (Potential)</span> → <span class="order-class">Scholar</span><br>
+            Elsecallers pursue knowledge and transformation. The Scholar's emphasis on lore, intellect, and crafting flows right into their ideals.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Lightweavers (Secrecy)</span> → <span class="order-class">Envoy or Agent</span><br>
+            Lightweavers excel in persuasion, artistry, and deception. Envoy reflects the charm side, Agent the infiltration side.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Skybreakers (Justice)</span> → <span class="order-class">Agent</span><br>
+            Skybreakers enforce the law through investigation and punishment. The Agent's stealth, insight, and discipline match their "judge and executioner" vibe.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Stonewards (Tenacity)</span> → <span class="order-class">Warrior or Leader</span><br>
+            The tireless soldiers of Roshar. Warriors embody their endurance, Leaders their reliability as anchors for groups.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Truthwatchers (Truth)</span> → <span class="order-class">Scholar</span><br>
+            They seek and share knowledge, with a touch of mystical insight. The Scholar's lore-driven talents sync well with their investigative spirit.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Willshapers (Freedom)</span> → <span class="order-class">Hunter or Envoy</span><br>
+            They value independence and exploration. Hunter emphasizes survival and scouting, Envoy emphasizes inspiring freedom in others.
+        </div>
+
+        <div class="order">
+            <span class="order-name">Windrunners <span class="tooltip">(Protection)<span class="tooltip-text">You are driven by a desire to defend those who cannot defend themselves. You likely value martial excellence and thrive within a team or military structure.<br><br><strong>Playstyle:</strong> You want to be in the thick of combat, using gravity to fly or walk on walls to reach those in danger.</span></span></span> → <span class="order-class">Warrior or Leader</span><br>
+            They're all about defending others, holding the line, and inspiring troops. Strength and Presence align with their oaths.
+        </div>
+    </main>
+</body>
+</html>
