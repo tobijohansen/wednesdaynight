@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrasion - Stonewalkers Campaign</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #21262d;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        header img {
+            height: 48px;
+            width: auto;
+            opacity: 0.85;
+        }
+
+        header span {
+            color: #6e7681;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #6e7681;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #c9a227;
+        }
+
+        .back-link::before {
+            content: "← ";
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-bottom: 0.25rem;
+            letter-spacing: 0.02em;
+        }
+
+        .attribute {
+            color: #6e7681;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: #c9a227;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #21262d;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            color: #d4a857;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .orders {
+            color: #7ab8bf;
+            margin-bottom: 1rem;
+        }
+
+        .activation {
+            color: #a88bc4;
+            margin-bottom: 1rem;
+        }
+
+        .prereq {
+            color: #6e7681;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .flavor {
+            color: #8b9dc3;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .ability-name {
+            color: #c9a227;
+            font-weight: bold;
+        }
+
+        .talent-box {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .talent-box h3 {
+            margin-top: 0;
+        }
+
+        .talent-tree-img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            margin: 1rem 0 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Abrasion</h1>
+        <p class="attribute">Speed</p>
+
+        <p>The surge of Abrasion alters the frictional force on an object's surface, usually by nearly eliminating it.</p>
+
+        <h2>Abrasion Surge</h2>
+        <p class="orders"><strong>Radiant Orders:</strong> Dustbringer, Edgedancer</p>
+        <p class="activation"><strong>Activation:</strong> ▶</p>
+
+        <p>Spend 1 Investiture or more to infuse an object or portion of a surface within your reach, making it nearly frictionless; to do so, you must have a hand free and touch the target. This infusion uses 1 Investiture each round, and for the duration, the object or surface slides freely.</p>
+
+        <p>This target can't exceed the surge size for your ranks in Abrasion (see the Surge Scaling table at the beginning of this chapter).</p>
+
+        <p>You can't use this surge on other characters, Invested objects (like Shardplate), or objects that have been infused with Stormlight (like infused spheres or objects affected by surges).</p>
+
+        <p>Alternatively, you can infuse your body with Abrasion, regardless of your size, spending 1 Investiture each round to maintain the surge. While infused, you can freely change which parts of your body are frictionless, and you can use Skate and Slide until the surge ends:</p>
+
+        <p><span class="ability-name">▷ Skate.</span> You can skate across the ground as if it were ice. Spend 2 focus to Move (as ▷) in a straight line on the ground. You can accomplish this frictionless movement without practice—though you'll need experience to do it gracefully!</p>
+
+        <p><span class="ability-name">∞ Slide.</span> You instinctively remove friction from parts of your body to more easily slide over obstacles or escape bonds. You count as one size smaller when squeezing through spaces, and you gain an advantage on tests to escape restraints that hold you via friction or pressure.</p>
+
+        <h2>Using Abrasion</h2>
+        <p>In addition to the basic surge rules above, this section provides more guidance on using or interacting with this surge in your game.</p>
+
+        <h3>Abrasion on Others</h3>
+        <p>While you can't directly target other characters with Abrasion, you can target objects they're holding or wearing. If a character is willing, you can easily infuse objects in their possession.</p>
+
+        <p>To infuse an object held by an unwilling character or to infuse a surface that's supporting most of their weight (such as the ground they're standing on or a wall they're climbing), you must succeed on an Abrasion test against the target's Physical defense. On a failure, you don't infuse that object and you don't spend Investiture on the attempt.</p>
+
+        <h3>Interacting With Slick Surfaces</h3>
+        <p>When another character steps on or otherwise interacts with a surface or object you made slick with Abrasion, it's difficult to stay on their feet or hold on to the slippery object. The character must make an Agility test opposed by your Abrasion. If they succeed, they stay on their feet or hold on to the object; otherwise, they fall Prone or drop the object.</p>
+
+        <h2>Abrasion Talent Tree</h2>
+        <img src="images/abrasion-talent-tree.png" alt="Abrasion Talent Tree" class="talent-tree-img">
+
+        <h2>Abrasion Talents</h2>
+        <p>The following talents, presented here in alphabetical order, appear in the Abrasion talent tree for the Dustbringer and Edgedancer paths.</p>
+
+        <div class="talent-box">
+            <h3>Distant Surgebinding</h3>
+            <p class="prereq">Prerequisite: Reverse Abrasion talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You can infuse targets from a greater distance.</p>
+            <p>You can use your surges and their talents as though your reach is 20 feet, and you don't need to touch the target.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Frictionless Motion</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You become increasingly adept at using Abrasion to glide through your environment.</p>
+            <p>While infused with Abrasion, your movement rate increases by 10 feet, and you ignore the Slowed condition when imposed by difficult terrain, climbing, crawling, and swimming.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Graceful Skating</h3>
+            <p class="prereq">Prerequisite: Frictionless Motion talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You dynamically skate around the battlefield, easily slipping away from your foes.</p>
+            <p>When you Skate, you aren't restricted to moving in a straight line.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Reverse Abrasion</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ★</p>
+            <p class="flavor">Instead of making objects frictionless with Abrasion, you can now increase friction.</p>
+            <p>When you infuse an object or surface with Abrasion, you can choose to increase the infused target's friction instead of reducing it, making it easier to grip and traverse. When a character interacts with such an object, they gain an advantage on Agility and Athletics tests made to do so. When a character moves across such a surface, they ignore any Slowed condition the surface would normally apply (such as due to climbing or difficult terrain).</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Slick Combatant</h3>
+            <p class="prereq">Prerequisite: Slippery Target talent</p>
+            <p class="activation"><strong>Activation:</strong> ★</p>
+            <p class="flavor">You are poetry in motion, able to perform nearly any feat without slowing down.</p>
+            <p>When you Skate or otherwise Move while infused with Abrasion, you can interrupt your movement at one or more points, use other actions as if you'd finished your Move, then use your remaining movement as if you were still in the middle of that Move action.</p>
+            <p>Once per round, when you make a melee weapon attack after starting that Move but before finishing it, you can roll an extra 1d4 damage for that attack. The size of this die increases with your ranks in Abrasion: at 2 ranks, roll an extra 1d6 damage (instead of 1d4), and so on. However, if you add this damage die, the GM can spend ✧ from the attack test to cause you to fall Prone and immediately end your Move action.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Slippery Target</h3>
+            <p class="prereq">Prerequisite: Graceful Skating talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You make yourself so slick that glancing and hasty blows slide right off you.</p>
+            <p>While you are infused with Abrasion, attacks can't graze you and Reactive Strikes against you gain a disadvantage.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Smooth Operator</h3>
+            <p class="prereq">Prerequisite: Distant Surgebinding talent or Slippery Target talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You've become so efficient at infusing yourself with Abrasion that it becomes subconscious, allowing you to slip around with effortless grace.</p>
+            <p>While you have 1 Investiture or more, you gain the benefits of being infused with Abrasion without spending Investiture, and it costs you 1 fewer focus to Skate.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Stormlight Reclamation</h3>
+            <p class="prereq">Prerequisite: Reverse Abrasion talent</p>
+            <p class="activation"><strong>Activation:</strong> ▷</p>
+            <p class="flavor">You can reclaim Stormlight from active infusions.</p>
+            <p>After your infusions expend their infused Investiture at the start of your turn, you can end any number of those infusions within your reach, recovering all remaining Investiture they were infused with.</p>
+        </div>
+
+    </main>
+</body>
+</html>

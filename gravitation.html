@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravitation - Stonewalkers Campaign</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0d1117; color: #c9d1d9; font-family: Georgia, 'Times New Roman', serif; line-height: 1.8; min-height: 100vh; }
+        header { padding: 1.5rem 2rem; border-bottom: 1px solid #21262d; display: flex; align-items: center; gap: 1rem; }
+        header a { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+        header img { height: 48px; width: auto; opacity: 0.85; }
+        header span { color: #6e7681; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
+        main { max-width: 750px; margin: 0 auto; padding: 3rem 2rem; }
+        .back-link { display: inline-block; color: #6e7681; text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; }
+        .back-link:hover { color: #c9a227; }
+        .back-link::before { content: "← "; }
+        h1 { font-size: 2.5rem; font-weight: normal; color: #c9a227; margin-bottom: 0.25rem; letter-spacing: 0.02em; }
+        .attribute { color: #6e7681; font-style: italic; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.5rem; font-weight: normal; color: #c9a227; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #21262d; }
+        h3 { font-size: 1.2rem; font-weight: normal; color: #d4a857; margin-top: 2rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; text-align: justify; }
+        .orders { color: #7ab8bf; margin-bottom: 1rem; }
+        .activation { color: #a88bc4; margin-bottom: 1rem; }
+        .prereq { color: #6e7681; font-style: italic; margin-bottom: 0.5rem; }
+        .flavor { color: #8b9dc3; font-style: italic; margin-bottom: 1rem; }
+        .talent-box { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1.25rem; margin-bottom: 1.5rem; }
+        .talent-box h3 { margin-top: 0; }
+        .talent-tree-img { width: 100%; max-width: 600px; border-radius: 6px; border: 1px solid #30363d; margin: 1rem 0 2rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Gravitation</h1>
+        <p class="attribute">Awareness</p>
+
+        <p>The surge of Gravitation can change the direction and magnitude of an object's gravitational attraction. Gravitation infusions temporarily draw an object to another point instead of the planet's center of gravity. This is known as a Basic Lashing.</p>
+
+        <h2>Gravitation Surge</h2>
+        <p class="orders"><strong>Radiant Orders:</strong> Skybreaker, Windrunner</p>
+        <p class="activation"><strong>Activation:</strong> ▶</p>
+
+        <p>To perform a Basic Lashing, spend 1 Investiture or more to infuse a character or object within your reach; you must have a hand free and touch the target. Your target can't exceed the surge size for your ranks in Gravitation (see the Surge Scaling table at the beginning of this chapter).</p>
+
+        <p>The infusion uses 1 Investiture each round, and for the duration, the target's gravity changes directions (as described below in "Targeting a Character" and "Targeting an Object"). This change uses your gravitation rate, which begins at 25 feet.</p>
+
+        <p>Your target doesn't move fast enough to deal damage on impact. However, if a target is aloft when the surge ends, they fall and take the usual damage from the fall (see "Movement and Positioning" in chapter 10).</p>
+
+        <p><strong>Targeting a Character.</strong> You can target a willing character, granting them a flying rate equal to your gravitation rate for the duration. (For rules on flying, see "Movement and Positioning" in chapter 10.)</p>
+
+        <p>Alternatively, you can infuse yourself with Gravitation regardless of your size, gaining the same flying rate and spending 1 Investiture each round to maintain the surge.</p>
+
+        <p>To target an unwilling character, see "Gravitation on Others."</p>
+
+        <p><strong>Targeting an Object.</strong> You can target an object, declaring a new direction for its gravity. At the start of each of your turns, after the infusion expends another 1 Investiture, move that object in a straight line up to your gravitation rate.</p>
+
+        <p>You can't use this surge on Invested objects (like Shardplate) or objects that have been infused with Stormlight (like infused spheres or objects affected by surges).</p>
+
+        <h2>Using Gravitation</h2>
+        <p>In addition to the basic surge rules above, this section provides more guidance on using or interacting with this surge in your game.</p>
+
+        <h3>Gravitation on Others</h3>
+        <p>Performing a Basic Lashing on an unwilling character is challenging. To do so, make a Gravitation test against the target's Physical defense. On a success, spend 1 Investiture to move the target up to your gravitation rate in a direction of your choosing.</p>
+
+        <p>When you move an unwilling target in this way, they become Restrained until the start of your next turn. During this movement, if the target passes within reach of an object or surface at least one size larger than them, they can attempt to grab it by using the Avoid Danger reaction to make an Agility test opposed by your Gravitation (their Restrained condition doesn't impose a disadvantage on this test). If your target succeeds, they stop moving; while they continue holding on, you can't move them further with this infusion.</p>
+
+        <h3>Tricky Maneuvers</h3>
+        <p>When flying or moving something with a Basic Lashing, you don't usually need to make a test. However, if you're attempting something particularly dangerous or tricky—such as flying through a highstorm or threading an object through a small gap—you must succeed on a Gravitation test to perform the Lashing (DC set at the GM's discretion).</p>
+
+        <h2>Gravitation Talent Tree</h2>
+        <img src="images/gravitation-talent-tree.png" alt="Gravitation Talent Tree" class="talent-tree-img">
+
+        <h2>Gravitation Talents</h2>
+        <p>The following talents, presented here in alphabetical order, appear in the Gravitation talent tree for the Skybreaker and Windrunner paths.</p>
+
+        <div class="talent-box">
+            <h3>Aerial Squadron</h3>
+            <p class="prereq">Prerequisite: Gravitation 3+; Group Flight talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You've trained your allies in aerial combat scenarios, readying them to fly together at a moment's notice.</p>
+            <p>You can use your Group Flight in combat.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Flying Ace</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ▶</p>
+            <p class="flavor">You are a master of the skies, adeptly wielding your weapon while in flight.</p>
+            <p>While maintaining a Basic Lashing on yourself, fly a distance up to your gravitation rate. Once during this movement, you can spend 1 focus to make a melee weapon attack as part of the same action. After resolving that attack, you can continue your movement.</p>
+            <p>Additionally, when you acquire this talent, your gravitation rate increases to 40 feet.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Gravitational Slam</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">Your Basic Lashings become more forceful and potentially dangerous on impact.</p>
+            <p>When you use a Basic Lashing to move an unwilling creature or object into a solid surface, the collision stops that movement early, and you can choose for the Lashed target to take 1d4 impact damage for every 10 feet they were moved with that Lashing on this turn. For example, if you moved them 25 feet then they collide with a wall, they take 2d4 impact damage.</p>
+            <p>Your target can use the Avoid Danger reaction to make an Agility test opposed by your Gravitation, taking half as much damage on a success.</p>
+            <p>The size of these damage dice increases with your ranks in Gravitation; at 2 ranks, roll 1d6 (instead of 1d4), and so on.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Group Flight</h3>
+            <p class="prereq">Prerequisite: Stable Flight talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You can infuse multiple allies with Gravitation at once.</p>
+            <p>While not in combat, when you spend 1 Investiture or more to infuse yourself or a willing character with a Basic Lashing, you can also infuse a number of additional willing characters up to your ranks in Gravitation. Each target must be within your reach. These infusions last for the duration of the original infusion and require no additional Investiture to create or maintain.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Lashing Shot</h3>
+            <p class="prereq">Prerequisite: Gravitational Slam talent</p>
+            <p class="activation"><strong>Activation:</strong> ▶▶</p>
+            <p class="flavor">You apply multiple Basic Lashings to an object, launching it with several times the force of gravity.</p>
+            <p>You touch an unattended object of a size you can affect with your ranks in Gravitation, then you propel that object at a target in your line of effect, spending Investiture equal to the distance to that target divided by your gravitation rate (rounded up).</p>
+            <p>Make a ranged Gravitation attack against the Physical defense of that target, rolling 2d4 impact damage. The size of these damage dice increases with your ranks in Gravitation; at 2 ranks, roll 2d6 (instead of 2d4), and so on.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Master of the Skies</h3>
+            <p class="prereq">Prerequisite: Group Flight talent or Lashing Shot talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You've become so efficient at infusing yourself with Gravitation that it becomes subconscious, allowing you to endlessly soar.</p>
+            <p>While you have 1 Investiture or more, you gain the benefits of being infused with Gravitation without spending Investiture.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Multiple Lashings</h3>
+            <p class="prereq">Prerequisite: Gravitational Slam talent</p>
+            <p class="activation"><strong>Activation:</strong> ★</p>
+            <p class="flavor">You can apply multiple Basic Lashings to an enemy.</p>
+            <p>After you succeed on a Gravitation test to move an unwilling character, you can infuse them with an amount of Investiture up to your ranks in Gravitation (instead of only 1 Investiture). When you do, the effect continues until the infusion ends (instead of until the start of your next turn).</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Stable Flight</h3>
+            <p class="prereq">Prerequisite: Flying Ace talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You're an expert in launching attacks from afar in mid-flight.</p>
+            <p>While maintaining a Basic Lashing on yourself, your ranged attacks don't gain a disadvantage due to flying or other causes of unstable footing.</p>
+        </div>
+    </main>
+</body>
+</html>

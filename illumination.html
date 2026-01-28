@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illumination - Stonewalkers Campaign</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0d1117; color: #c9d1d9; font-family: Georgia, 'Times New Roman', serif; line-height: 1.8; min-height: 100vh; }
+        header { padding: 1.5rem 2rem; border-bottom: 1px solid #21262d; display: flex; align-items: center; gap: 1rem; }
+        header a { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+        header img { height: 48px; width: auto; opacity: 0.85; }
+        header span { color: #6e7681; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
+        main { max-width: 750px; margin: 0 auto; padding: 3rem 2rem; }
+        .back-link { display: inline-block; color: #6e7681; text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; }
+        .back-link:hover { color: #c9a227; }
+        .back-link::before { content: "← "; }
+        h1 { font-size: 2.5rem; font-weight: normal; color: #c9a227; margin-bottom: 0.25rem; letter-spacing: 0.02em; }
+        .attribute { color: #6e7681; font-style: italic; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.5rem; font-weight: normal; color: #c9a227; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #21262d; }
+        h3 { font-size: 1.2rem; font-weight: normal; color: #d4a857; margin-top: 2rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; text-align: justify; }
+        .orders { color: #7ab8bf; margin-bottom: 1rem; }
+        .activation { color: #a88bc4; margin-bottom: 1rem; }
+        .prereq { color: #6e7681; font-style: italic; margin-bottom: 0.5rem; }
+        .flavor { color: #8b9dc3; font-style: italic; margin-bottom: 1rem; }
+        .talent-box { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1.25rem; margin-bottom: 1.5rem; }
+        .talent-box h3 { margin-top: 0; }
+        .talent-tree-img { width: 100%; max-width: 600px; border-radius: 6px; border: 1px solid #30363d; margin: 1rem 0 2rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Illumination</h1>
+        <p class="attribute">Presence</p>
+
+        <p>The surge of Illumination can create convincing illusions, both visual and auditory. This ability is commonly known as Lightweaving, though Lightweavers and Truthwatchers can both use this surge.</p>
+
+        <h2>Illumination Surge</h2>
+        <p class="orders"><strong>Radiant Orders:</strong> Lightweaver, Truthwatcher</p>
+        <p class="activation"><strong>Activation:</strong> ▶</p>
+
+        <p>To Lightweave an illusion, spend 1 Investiture or more to infuse it into thin air in a space within your spren bond range. This illusion can't exceed the surge size for your ranks in Illumination (see the Surge Scaling table at the beginning of this chapter).</p>
+
+        <p>Lightweavings typically take the form of a three-dimensional hologram representing a character, object, or phenomenon you're familiar with. This illusion is composed of light, complete with animation and accompanying sounds produced by the vibrations of your bonded spren.</p>
+
+        <p><strong>Simple and Complex Illusions.</strong> If the illusion depicts a simple object with no sound or animations, the infusion uses 1 Investiture every 10 minutes. If the illusion depicts a character or more complex object, it instead uses 1 Investiture each round. For the duration, the illusion remains active even if you move out of range. You can move and control a complex illusion, as detailed in "Controlling Illusions."</p>
+
+        <p><strong>Disguising Yourself.</strong> Alternatively, if you have 1 Investiture or more, you can use Illumination to create an illusory disguise on yourself without spending Investiture. This disguise lasts until you end it as ▷ or run out of Investiture.</p>
+
+        <p><strong>Deceiving Characters.</strong> If your illusion is a simple object or a disguise on yourself, it automatically convinces characters unless they have a reason to be suspicious. If you create a more complex illusion (such as disguising another character), the GM might require you to make an Illumination test against the Cognitive defense of any character who passively observes the illusion; on a success, your illusion is convincing to them.</p>
+
+        <p>A character might decide to Use a Skill to scrutinize your illusion, especially if you fail the above Illumination test or if you or your allies roll a Complication on a related test. In this case, make an Illumination test opposed by the character's Perception test. If their test result exceeds your own, they notice the illusion (see "Detecting Illusions" for the effects).</p>
+
+        <p>You can make these tests to deceive characters even if that illusion is currently out of your spren bond range.</p>
+
+        <h2>Using Illumination</h2>
+        <p>In addition to the basic surge rules above, this section provides more guidance on using or interacting with this surge in your game.</p>
+
+        <h3>Imagining Illusions</h3>
+        <p>Lightweaving is easiest when replicating something you're familiar with. If you have a great memory or if you reference material you created (such as a sketch, a painting, or a written passage) you might be able to Lightweave something you've only encountered a few times—but your Illumination tests to deceive onlookers will probably gain a disadvantage.</p>
+
+        <p>It's very challenging to Lightweave something you've only seen in drawings or imagined yourself. It's up to your GM how difficult this is, but you might face challenges such as a reduced surge size, an additional Investiture cost, a focus cost, an increased DC, or a disadvantage on your d20 roll.</p>
+
+        <h3>Controlling Illusions</h3>
+        <p>You can control all of your complex illusions that are within your spren bond range. Each illusion can pretend to interact with its environment; for example, you might make an illusionary tree bend with the wind, or make an illusionary child try to catch a ball (but intentionally miss it). However, your illusion has no senses of its own, so you can't give it tasks that require senses or knowledge you don't have.</p>
+
+        <p>An illusion can move up to your movement rate on your turn in a manner reasonable for that illusion. You can use ▷ to have one or more of your illusions perform simple, mindless tasks like walking across the street or shouting a phrase. You can use ▶ to task one of your illusions with something that requires your careful attention, such as convincingly conversing with someone.</p>
+
+        <p>If you move out of range, your illusions can only perform whatever simple, mindless tasks you last gave them, such as gazing thoughtfully at a bookshelf.</p>
+
+        <h3>Maintaining Illusions</h3>
+        <p>When your illusions begin running out of Stormlight, you can seamlessly maintain them by feeding Investiture from your own supply. You can use ▷ to infuse 1 Investiture or more into any illusions of your choice within your spren bond range (spending separate Investiture for each illusion).</p>
+
+        <h3>Detecting Illusions</h3>
+        <p>A failed Illumination test or an unfortunate Complication can cause a target to recognize that an illusion is artificial. However, when this happens, the illusion itself persists, and it might even continue to conceal something else in the right circumstances. For example, if you Lightweave a boulder around yourself, a successful Perception test may alert an enemy that something is amiss, but they still won't be able to see inside the boulder. (However, you can't see through your illusionary boulder either!)</p>
+
+        <p>Tests aren't the only way to detect an illusion (or to become suspicious of one). If one character detects an illusion, they might alert their allies that it isn't real. And if a physical object passes through an illusion, a white blur appears at the intersection, and a character familiar with Lightweaving might recognize these telltale signs. Such events can betray the presence of Lightweaving, and any character wishing to determine the boundaries or source of an illusion can make a Deduction or Perception test opposed by your Illumination.</p>
+
+        <h2>Illumination Talent Tree</h2>
+        <img src="images/illumination-talent-tree.png" alt="Illumination Talent Tree" class="talent-tree-img">
+
+        <h2>Illumination Talents</h2>
+        <p>The following talents, presented here in alphabetical order, appear in the Illumination talent tree for the Lightweaver and Truthwatcher paths.</p>
+
+        <div class="talent-box">
+            <h3>Disorienting Flash</h3>
+            <p class="prereq">Prerequisite: Distracting Illusion talent</p>
+            <p class="activation"><strong>Activation:</strong> ▶▶</p>
+            <p class="flavor">You create a brief burst of light and sound that attacks the senses of targets near you.</p>
+            <p>Spend 1 Investiture to project a burst of light in an area within your reach, up to the size you can create with your ranks in Illumination. Make one Illumination test and compare the result against the Cognitive defense of each character in that area. If you succeed against a target, they become Disoriented until the end of their next turn.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Distracting Illusion</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ▶</p>
+            <p class="flavor">You create a moving, illusory copy of someone to distract your enemies.</p>
+            <p>Spend 1 Investiture to Lightweave an illusory duplicate, either of yourself or an ally you can sense within your spren bond range. The illusion appears in that character's space and moves with them. Attacks against that character gain a disadvantage and can't graze. The illusion ends after an attack misses that character or at the end of the scene.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Endless Illusions</h3>
+            <p class="prereq">Prerequisite: Multiplicative Lightweaving talent or Spiritual Illumination talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You've become so efficient at powering your illusions that you can maintain them indefinitely.</p>
+            <p>While you have 1 Investiture or more, each of your Illumination infusions within your spren bond range expends no infused Investiture at the start of your turn.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Lingering Lightweaving</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ★</p>
+            <p class="flavor">You infuse spheres with your Illumination, creating illusions that linger long after you've moved away.</p>
+            <p>When you Lightweave an illusion, instead of creating it in thin air, you can instead infuse its Investiture in a sphere or unencased gem within 5 feet of that illusion. For the duration, the illusion moves with the gem; for example, an ally could carry this gem to extend the duration of an illusory disguise you created for them. Instead of the infusion expending 1 Investiture per round, it expends 1 Investiture per number of rounds equal to your ranks in Illumination; for example, if you have 3 ranks in Illumination, your infusions in spheres expend Investiture once every 3 rounds.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Multiplicative Lightweaving</h3>
+            <p class="prereq">Prerequisite: Stormlight Reclamation talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You effortlessly Lightweave multiple illusions at once.</p>
+            <p>When you Lightweave an illusion, you can create a number of additional illusions up to your ranks in Illumination. These infusions last for the duration of the original infusion and require no additional Investiture to create or maintain.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Painful Truth</h3>
+            <p class="prereq">Prerequisite: Spiritual Illumination talent</p>
+            <p class="activation"><strong>Activation:</strong> ▶</p>
+            <p class="flavor">You create a haunting image of who an enemy could have been if they'd taken a better path.</p>
+            <p>Spend 2 Investiture and make an Illumination test against the Spiritual defense of a target you can sense within your spren bond range. On a success, they stumble in shock, becoming Slowed until the end of their next turn.</p>
+            <p>At the start of the target's next turn, they must either spend focus equal to your ranks in Illumination to end this effect as ▷, or immediately use the Move action to move as far as possible away from you.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Spiritual Illumination</h3>
+            <p class="prereq">Prerequisite: Disorienting Flash talent</p>
+            <p class="activation"><strong>Activation:</strong> ▶</p>
+            <p class="flavor">You use Lightweaving to show your allies inspiring possibilities of who they could become.</p>
+            <p>Spend 2 Investiture to create a momentary Lightweaving near an ally you can sense within your spren bond range. That ally becomes Determined and Focused until the end of their next turn.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Stormlight Reclamation</h3>
+            <p class="prereq">Prerequisite: Distracting Illusion talent</p>
+            <p class="activation"><strong>Activation:</strong> ▷</p>
+            <p class="flavor">You can reclaim Stormlight from active illusions.</p>
+            <p>After your infusions expend their infused Investiture at the start of your turn, you can end any number of those infusions within your reach, recovering all remaining Investiture they were infused with.</p>
+        </div>
+    </main>
+</body>
+</html>

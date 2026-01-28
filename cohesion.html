@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohesion - Stonewalkers Campaign</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0d1117; color: #c9d1d9; font-family: Georgia, 'Times New Roman', serif; line-height: 1.8; min-height: 100vh; }
+        header { padding: 1.5rem 2rem; border-bottom: 1px solid #21262d; display: flex; align-items: center; gap: 1rem; }
+        header a { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+        header img { height: 48px; width: auto; opacity: 0.85; }
+        header span { color: #6e7681; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
+        main { max-width: 750px; margin: 0 auto; padding: 3rem 2rem; }
+        .back-link { display: inline-block; color: #6e7681; text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; }
+        .back-link:hover { color: #c9a227; }
+        .back-link::before { content: "← "; }
+        h1 { font-size: 2.5rem; font-weight: normal; color: #c9a227; margin-bottom: 0.25rem; letter-spacing: 0.02em; }
+        .attribute { color: #6e7681; font-style: italic; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.5rem; font-weight: normal; color: #c9a227; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #21262d; }
+        h3 { font-size: 1.2rem; font-weight: normal; color: #d4a857; margin-top: 2rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; text-align: justify; }
+        .orders { color: #7ab8bf; margin-bottom: 1rem; }
+        .activation { color: #a88bc4; margin-bottom: 1rem; }
+        .prereq { color: #6e7681; font-style: italic; margin-bottom: 0.5rem; }
+        .flavor { color: #8b9dc3; font-style: italic; margin-bottom: 1rem; }
+        .talent-box { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1.25rem; margin-bottom: 1.5rem; }
+        .talent-box h3 { margin-top: 0; }
+        .talent-tree-img { width: 100%; max-width: 600px; border-radius: 6px; border: 1px solid #30363d; margin: 1rem 0 2rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Cohesion</h1>
+        <p class="attribute">Willpower</p>
+
+        <p>The surge of Cohesion allows you to alter objects down to their very axi—the particles that make up all matter. Often known as Stoneshaping, Cohesion allows even its most inexperienced wielders to mold stone as if it were soft clay.</p>
+
+        <h2>Cohesion Surge</h2>
+        <p class="orders"><strong>Radiant Orders:</strong> Stoneward, Willshaper</p>
+        <p class="activation"><strong>Activation:</strong> ▶</p>
+
+        <p>Infuse 1 Investiture or more into an unattended object or portion of a surface within your reach that is made of stone; to do so, you must have a hand free and touch the target. This infusion uses 1 Investiture each round, and for the duration, the stone becomes moldable and soft like clay. When you activate this surge, you can immediately form the stone into a rough shape as part of that action, but any elaborate molding requires more time (see "Shaping Stone").</p>
+
+        <p>This object or portion of the surface can't exceed the surge size for your ranks in Cohesion (see the Surge Scaling table at the beginning of this chapter).</p>
+
+        <p>You can't use this surge on characters, Invested objects (like Shardplate), or objects that have been infused with Stormlight (like infused spheres or objects affected by surges).</p>
+
+        <h2>Using Cohesion</h2>
+        <p>In addition to the basic surge rules above, this section provides more guidance on using or interacting with this surge in your game.</p>
+
+        <h3>Shaping Stone</h3>
+        <p>You can touch Cohesion-infused stone and mold it into any shape you desire; when that infusion ends, the stone resolidifies in its new shape, strong as before. You can briefly shape the stone when you activate the surge, but more elaborate reshaping requires additional time. In combat, this usually requires an additional action to Interact (for moderate reshaping) or Use a Skill (if your creation is intricate enough to require a Cohesion skill test; the GM sets the DC based on how elaborate of an object you're creating). At the GM's discretion, some shaping tasks might take significantly more time, potentially requiring labor outside of combat.</p>
+
+        <h3>Cohesion on Others</h3>
+        <p>While it's simple to melt and reshape unattended stone, trying to use it against opponents is more difficult. To infuse an object held by an unwilling character or to infuse a surface that's supporting most of their weight (such as the ground they're standing on), you must succeed on a Cohesion test against the target's Physical defense. On a failure, you don't infuse that object and you don't spend Investiture on the attempt.</p>
+
+        <p>You can use this surge in countless creative ways, and it's up to you and your GM to decide how to resolve each situation. For example, you might infuse the ground under your opponent's feet, causing them to sink them into the earth and become Slowed by the quagmire. Or you might soften a portion of a stone wall, collapsing it atop them. You might even smear soft stone over a weapon they're holding, giving it the Heavy trait with a value equal to your ranks in Cohesion.</p>
+
+        <h3>Escaping Solid Stone</h3>
+        <p>When a Cohesion infusion runs out, the stone returns to its previously rigid state. When this happens, any character or object at least partially within it becomes Immobilized; if enough of their body is encased, they might also become Restrained. To free such a character or object, the trapped character or another character within reach must Use a Skill, making an Athletics test opposed by your Cohesion. If they succeed, they slip out. Otherwise, they must be dug out, which can take 10 minutes or much longer, depending on the situation.</p>
+
+        <h2>Cohesion Talent Tree</h2>
+        <img src="images/cohesion-talent-tree.png" alt="Cohesion Talent Tree" class="talent-tree-img">
+
+        <h2>Cohesion Talents</h2>
+        <p>The following talents, presented here in alphabetical order, appear in the Cohesion talent tree for the Stoneward and Willshaper paths.</p>
+
+        <div class="talent-box">
+            <h3>Flowing Earth</h3>
+            <p class="prereq">Prerequisite: True Stoneshaping talent</p>
+            <p class="activation"><strong>Activation:</strong> ★</p>
+            <p class="flavor">Shaping stone with Cohesion has become so natural that you can mold the ground beneath your feet as you actively sculpt other stone.</p>
+            <p>After you use Cohesion or spend at least ▶ on one of its talents, you can shape the stone beneath your feet without spending additional Investiture to do so. The stone pushes you up to 5 feet × your ranks in Cohesion, and you can choose to be pushed in any direction, such as rising upward on a pillar. This movement doesn't trigger Reactive Strikes.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Memories of Stone</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ▶▶</p>
+            <p class="flavor">Your deepening knowledge of the earth allows you to commune with stone itself, gaining visions of things the stone has seen.</p>
+            <p>Spend 1 Investiture to communicate for 1 round with stone you're touching. The earth's knowledge reaches far, including the area's history and memories of nearby events, but it communicates in sculpted images and faint whispers that might be cryptic or incomplete. To interpret these communications, the GM might require you to succeed on a Cohesion test (DC determined by the GM). To communicate with the stone for more than 1 round, you must use this talent multiple times.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Sinkhole</h3>
+            <p class="prereq">Prerequisite: Stone Spear talent</p>
+            <p class="activation"><strong>Activation:</strong> ▶</p>
+            <p class="flavor">You cause the ground to soften so quickly that it can catch anyone standing in it by surprise.</p>
+            <p>Spend 1 Investiture and choose an area of stone ground of a size you can affect with your ranks in Cohesion. Then choose one or more characters who are touching the ground in that area. Make one Cohesion test and compare the result to the Cognitive defense of each chosen character. If you succeed against a target, they sink into the ground and are Immobilized as you resolidify the rock. (See "Using Cohesion" for rules on escaping.)</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Stone Spear</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ▶▶</p>
+            <p class="flavor">You cause the surface of the stone to launch forward in tight pillars, solidifying mid-flight before slamming into your target.</p>
+            <p>Spend 1 Investiture to make a ranged Cohesion attack against the Physical defense of a target within 60 feet of you, rolling 2d4 impact damage. On a hit, you can also spend ✧ to knock the target Prone.</p>
+            <p>The size of this attack's damage dice increases with your ranks in Cohesion; at 2 ranks, roll 2d6 (instead of 2d4), and so on.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Through the Stone</h3>
+            <p class="prereq">Prerequisite: Sinkhole talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">When you touch stone, you can sense and use your Cohesion through it from a much greater distance.</p>
+            <p>You can use your surges and their talents as though your reach is 20 feet, as long as there is a stone surface between you and your target that you can touch.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>True Stoneshaping</h3>
+            <p class="prereq">Prerequisite: Cohesion 2+; Tunneling talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You no longer simply soften stone—you assert your will on it, molding it into complex shapes with a mere command.</p>
+            <p>When you use Cohesion to shape an object or surface, you can automatically reshape it to your will without using additional actions or time. For example, you can instantly raise or lower elevation, form walls or pillars, create or remove difficult terrain, or create intricate shapes or images.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Tunneling</h3>
+            <p class="prereq">Prerequisite: Sinkhole talent</p>
+            <p class="activation"><strong>Activation:</strong> ▶</p>
+            <p class="flavor">You infuse yourself with Cohesion to shift stone from your path as you move.</p>
+            <p>Spend 1 Investiture to infuse yourself with Cohesion. For the duration, you can move through stone surfaces and objects as if moving through difficult terrain. You leave a 5-foot-radius tunnel in your wake through which others can follow. At the start of each of your turns, you can spend 1 Investiture as ▷ to maintain this infusion.</p>
+            <p>If you create tunnels near the surface, an observant character might detect ripples from the diverted material, potentially sensing your presence.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Unbound Cohesion</h3>
+            <p class="prereq">Prerequisite: Cohesion 4+; Through the Stone talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">Your Stoneshaping transcends a singular medium, allowing you to soften and shape nearly any material.</p>
+            <p>You can use Cohesion and its talents not only on stone, but on any solid material that isn't alive, Invested, or infused with Stormlight.</p>
+        </div>
+    </main>
+</body>
+</html>

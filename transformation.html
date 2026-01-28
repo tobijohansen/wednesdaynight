@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation - Stonewalkers Campaign</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #0d1117; color: #c9d1d9; font-family: Georgia, 'Times New Roman', serif; line-height: 1.8; min-height: 100vh; }
+        header { padding: 1.5rem 2rem; border-bottom: 1px solid #21262d; display: flex; align-items: center; gap: 1rem; }
+        header a { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+        header img { height: 48px; width: auto; opacity: 0.85; }
+        header span { color: #6e7681; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; }
+        main { max-width: 750px; margin: 0 auto; padding: 3rem 2rem; }
+        .back-link { display: inline-block; color: #6e7681; text-decoration: none; margin-bottom: 2rem; font-size: 0.9rem; }
+        .back-link:hover { color: #c9a227; }
+        .back-link::before { content: "← "; }
+        h1 { font-size: 2.5rem; font-weight: normal; color: #c9a227; margin-bottom: 0.25rem; letter-spacing: 0.02em; }
+        .attribute { color: #6e7681; font-style: italic; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
+        h2 { font-size: 1.5rem; font-weight: normal; color: #c9a227; margin-top: 2.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #21262d; }
+        h3 { font-size: 1.2rem; font-weight: normal; color: #d4a857; margin-top: 2rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; text-align: justify; }
+        .orders { color: #7ab8bf; margin-bottom: 1rem; }
+        .activation { color: #a88bc4; margin-bottom: 1rem; }
+        .prereq { color: #6e7681; font-style: italic; margin-bottom: 0.5rem; }
+        .flavor { color: #8b9dc3; font-style: italic; margin-bottom: 1rem; }
+        .talent-box { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1.25rem; margin-bottom: 1.5rem; }
+        .talent-box h3 { margin-top: 0; }
+        .talent-tree-img { width: 100%; max-width: 600px; border-radius: 6px; border: 1px solid #30363d; margin: 1rem 0 2rem 0; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        th, td { border: 1px solid #30363d; padding: 0.4rem; text-align: center; }
+        th { background-color: #161b22; color: #c9a227; }
+        .info-box { background-color: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 1rem; margin: 1rem 0; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images/Wednesday_Night.png" alt="Wednesday Night">
+            <span>Wednesday Night</span>
+        </a>
+    </header>
+    <main>
+        <a href="index.html" class="back-link">Back to Campaign</a>
+        
+        <h1>Transformation</h1>
+        <p class="attribute">Willpower</p>
+
+        <p>The surge of Transformation transforms one material into another. Often called Soulcasting, this surge shifts your perception of the object you want to transform, allowing you to see and communicate with its Cognitive aspect.</p>
+
+        <h2>Transformation Surge</h2>
+        <p class="orders"><strong>Radiant Orders:</strong> Elsecaller, Lightweaver</p>
+        <p class="activation"><strong>Activation:</strong> ▶▶</p>
+
+        <p>To Soulcast a material, choose a non-living object or portion of a surface within your reach and make a Transformation test (see "Transformation DC" below). To do so, you must have a hand free and touch the target. This target can't exceed the surge size for your ranks in Transformation.</p>
+
+        <p>You can't use this surge on Invested objects (like Shardplate) or objects that have been infused with Stormlight (like infused spheres or objects affected by surges). Additionally, you can't initially Soulcast living materials, including characters and plants (though talents can allow you to do so).</p>
+
+        <p><strong>Transformation DC.</strong> Soulcasting one material into a similar one is relatively simple, but the more you change its Essence, the more skill is required. Each material falls into one of six categories:</p>
+
+        <p>1. Solids like metal, stone, and crystal<br>
+        2. Organic matter like flesh, bone, and pulp<br>
+        3. Liquids like blood, water, and oil<br>
+        4. Vapors like smoke and gas<br>
+        5. Clear air<br>
+        6. Flame (only available to characters with the Flamecasting talent)</p>
+
+        <p>Determine which category best corresponds to your original material, then choose what category you want to transform the material into. If you're transforming it into a material no more than one category away, make a DC 10 Transformation test. This DC increases by 5 for each additional category away, as shown on the Transformation Difficulty Classes table.</p>
+
+        <h3>Transformation Difficulty Classes</h3>
+        <table>
+            <tr><th></th><th>Solids</th><th>Organics</th><th>Liquids</th><th>Vapors</th><th>Clear Air</th><th>Flame*</th></tr>
+            <tr><th>Solids</th><td>10</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td></tr>
+            <tr><th>Organics</th><td>10</td><td>10</td><td>10</td><td>15</td><td>20</td><td>25</td></tr>
+            <tr><th>Liquids</th><td>15</td><td>10</td><td>10</td><td>10</td><td>15</td><td>20</td></tr>
+            <tr><th>Vapors</th><td>20</td><td>15</td><td>10</td><td>10</td><td>10</td><td>15</td></tr>
+            <tr><th>Clear Air</th><td>25</td><td>20</td><td>15</td><td>10</td><td>10</td><td>10</td></tr>
+            <tr><th>Flame*</th><td>30</td><td>25</td><td>20</td><td>15</td><td>10</td><td>—</td></tr>
+        </table>
+        <p><em>*The Flame category is only available to characters with the Flamecasting talent.</em></p>
+
+        <p><strong>Successful Transformation.</strong> On a successful Transformation test, you compel the material to transform. Spend Investiture equal to the ranks required to transform an object of that size: 1 Investiture for a Small object, 2 Investiture for a Medium one, 3 Investiture for a Large one, 4 Investiture for a Huge one, and 5 Investiture for a Gargantuan one. Your target transforms into that substance.</p>
+
+        <p><strong>Failed Transformation.</strong> On a failure, you don't transform your target and you don't spend Investiture on the attempt. Since you've failed to compel that material to transform, you can't attempt to Soulcast that same object again during this scene.</p>
+
+        <h2>Using Transformation</h2>
+        <p>In addition to the basic surge rules above, this section provides more guidance on using or interacting with this surge in your game.</p>
+
+        <h3>Transformation on Others</h3>
+        <p>While you can't Soulcast living characters with the basic Transformation surge, you can creatively use your abilities to be useful and dangerous in combat. You might create obscuring fog out of thin air, giving attackers a disadvantage. You could create cover to shield behind. You might even turn the ground beneath your opponent's feet into liquid, causing them to fall Prone.</p>
+
+        <p>It's up to you and your GM to resolve such creative uses. In general, if your Soulcasting requires the opponent to make a test (such as to stay on their feet), their DC is equal to your Transformation test result.</p>
+
+        <div class="info-box">
+            <h3>Peering Into Shadesmar</h3>
+            <p>The surge of Transformation grants a limited ability to look into the Cognitive Realm. To do so, you can spend 2 Investiture and Use a Skill to make a Transformation test. On a success, you can use one effect from the Transportation surge (see "Transportation") to perceive 10 feet around you in the corresponding location in Shadesmar.</p>
+        </div>
+
+        <h2>Transformation Talent Tree</h2>
+        <img src="images/transformation-talent-tree.png" alt="Transformation Talent Tree" class="talent-tree-img">
+
+        <h2>Transformation Talents</h2>
+        <p>The following talents, presented here in alphabetical order, appear in the Transformation talent tree for the Elsecaller and Lightweaver paths.</p>
+
+        <div class="talent-box">
+            <h3>Bloodcasting</h3>
+            <p class="prereq">Prerequisite: Living Soulcasting talent</p>
+            <p class="activation"><strong>Activation:</strong> ▶▶</p>
+            <p class="flavor">You've practiced techniques for Soulcasting blood, allowing you to cleanse the body of poison and to speed recovery from injuries.</p>
+            <p>While touching a character, spend 1 Investiture and make a DC 15 Transformation test to cleanse their blood. On a success, the effects of any poison end for the target, and you can reduce the recovery time of one of their injuries by 5 days.</p>
+            <p>The GM can spend ✧ from this test to reduce the target's maximum health by twice their level until after the target's next long rest.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Distant Surgebinding</h3>
+            <p class="prereq">Prerequisite: Soulcast Parry talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You can Soulcast from a greater distance.</p>
+            <p>You can use your surges and their talents as though your reach is 20 feet, and you don't need to touch the target.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Expansive Transmuter</h3>
+            <p class="prereq">Prerequisite: Flamecasting talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You've become so powerful that you can Soulcast larger objects with much greater efficiency.</p>
+            <p>When you Soulcast non-living material, reduce the Investiture cost by 2 (to a minimum of 1 Investiture). For example, it now costs you only 1 Investiture to Soulcast either a Small, Medium, or Large object.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Flamecasting</h3>
+            <p class="prereq">Prerequisite: Soulcast Parry talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You've learned the difficult art of Soulcasting Essences directly into instantaneous bursts of flame.</p>
+            <p>On your surge's list of Soulcasting materials, you gain a sixth category called "Flame," which follows the entry for "Clear Air." When Soulcasting a material that's five spaces away on this expanded list, the DC is 30 (such as when Soulcasting stone into flame).</p>
+            <p>When you Soulcast an object into flame, the flames last for only a moment before dissipating. However, before they do, they can catch flammable objects on fire.</p>
+            <p>Additionally, when you Soulcast an object into flame, use the result of that Transformation test to make an attack as ▷ against the Physical defense of each character within 5 feet of the Soulcast object. Roll 2d4 energy damage. The size of these damage dice increases with your ranks in Transformation; at 2 ranks, roll 2d6 (instead of 2d4), and so on.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Living Soulcasting</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ▶▶</p>
+            <p class="flavor">You've mastered the subtleties of affecting living flesh with Soulcasting.</p>
+            <p>Spend 1 Investiture and make a melee Transformation attack against the Spiritual defense of a character, plant, or other living organism within your reach. Roll 3d4 spirit damage. The size of these damage dice increases with your ranks in Transformation; at 2 ranks, roll 3d6 (instead of 3d4), and so on.</p>
+            <p>If this reduces the target to 0 health, they die, and you transform their body into your choice of material without spending additional actions or Investiture.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Persistent Transformation</h3>
+            <p class="prereq">Prerequisite: Transformation 2+; Distant Surgebinding talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">Your force of will is so great that objects have a hard time denying you.</p>
+            <p>When transforming a non-living material, your Transformation test has a maximum DC of 15.</p>
+            <p>Additionally, after you fail to Soulcast an object, you can attempt to do so again during the same scene. When you succeed on this test, you must spend 1 additional Investiture per time you failed to Soulcast that object during this scene; if you can't spend that much Investiture, the object isn't transformed.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Soulcast Defense</h3>
+            <p class="prereq">Prerequisite: Speak the First Ideal</p>
+            <p class="activation"><strong>Activation:</strong> ⟲</p>
+            <p class="flavor">You Soulcast near-instinctively, able to transform projectiles in flight.</p>
+            <p>Before you or an ally within your reach is hit by a projectile from a ranged attack, you can use this reaction and spend 1 Investiture to make a Transformation test. The DC of this test equals the triggering attack's test result; you can choose whether to use this reaction after you learn the DC.</p>
+            <p>On a failure, the attack grazes instead of hitting. On a success, the attack instead misses and can't graze, and you transform the projectile into a material of your choice. If you choose a non-solid material, this destroys the projectile.</p>
+        </div>
+
+        <div class="talent-box">
+            <h3>Soulcast Parry</h3>
+            <p class="prereq">Prerequisite: Soulcast Defense talent</p>
+            <p class="activation"><strong>Activation:</strong> ∞</p>
+            <p class="flavor">You can use Soulcasting to defend against even more immediate threats.</p>
+            <p>You can now use Soulcast Defense on melee weapon attacks as well as ranged ones.</p>
+        </div>
+    </main>
+</body>
+</html>
